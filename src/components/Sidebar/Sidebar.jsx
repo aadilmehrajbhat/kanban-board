@@ -64,9 +64,9 @@ function Sidebar() {
     <div className="px-8 py-4 w-64 bg-gray-100 border-r">
       <img className="h-12 w-12" src={AppLogo} alt="" />
       <nav className="mt-8 ">
-        <h2 className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
+        <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
           Issues
-        </h2>
+        </h3>
         <div className="mt-2 -mx-3">
           {ISSUES.map(({ label, count = 0, link }, index) => (
             <a
@@ -92,9 +92,9 @@ function Sidebar() {
           ))}
         </div>
 
-        <h2 className="mt-8 text-xs font-semibold text-gray-600 uppercase tracking-wide">
+        <h3 className="mt-8 text-xs font-semibold text-gray-600 uppercase tracking-wide">
           Tags
-        </h2>
+        </h3>
         <div className="mt-2 -mx-3">
           {TAGS.map(({ label, link }) => (
             <a
